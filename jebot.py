@@ -50,9 +50,7 @@ async def help(client, message):
 
 🔴 Then wait for me to upload it to telegraph and send you the link.
 
-A project by [Lakshan Pathum](https://t.me/Lakshan_Pathum)
-
-☎️[Contact Me](@Lakshan_Pathum_Bot)""",
+A project by <a href="https://t.me/Lakshan_Pathum">Lakshan Pathum</a>""",
         reply_markup=InlineKeyboardMarkup(
                                 [[
                                         InlineKeyboardButton(
@@ -76,11 +74,11 @@ async def about(client, message):
 
 <b>🔥 Developer:</b> <a href="https://t.me/Lakshan_Pathum">LakshanPathum</a>
 
-<b>🔥 Support:</b> <a href="https://t.me/Lakshan_Pathum">slbotzone</a>
+<b>🔥 Contact Me:<a href="https://t.me/Lakshan_Pathum_Bot">My Assistant </a>""":</b> <a href="https://t.me/Lakshan_Pathum">slbotzone</a>
 
 <b>🔥 Library:</b> <a href="https://github.com/pyrogram/pyrogram">Pyrogram</a>
 
-<b>~ @slbotzone</b>""",
+<b>~ @Lakshan_Pathum</b>""",
      reply_markup=InlineKeyboardMarkup(
                                 [[
                                         InlineKeyboardButton(

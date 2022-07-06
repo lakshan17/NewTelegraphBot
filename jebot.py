@@ -17,21 +17,18 @@ async def start(client, message):
    if message.chat.type == 'private':
        await Jebot.send_message(
                chat_id=message.chat.id,
-               text="""<b>Hello 👋 there! I can upload photos,videos & gif animations to telegraph and provide you the link.
+               text="""<b>Hello {} 👋 there! I can upload photos,videos & gif animations to telegraph and provide you the link.
 
  Send me /help for more info.
 
-A project by @slbotzone 🇱🇰
-
-✅ Join our bots channel and group
-🔰@SL_bot_zone🔰@slbotzone
+A project by [Lakshan Pathum](https://t.me/Lakshan_Pathum)
 </b>""",   
                             reply_markup=InlineKeyboardMarkup(
                                 [[
                                         InlineKeyboardButton(
                                             "✍️Help👨‍💻", callback_data="help"),
                                         InlineKeyboardButton(
-                                            "✅Channel✅", url="https://t.me/slbotzone")
+                                            "✅Channel✅", url="https://t.me/Lakshan_Pathum")
                                     ],[
                                       InlineKeyboardButton(
                                             "📦Source Code📦", url="https://github.com/supunmadurangasl/TelegraphBot")
@@ -53,12 +50,9 @@ async def help(client, message):
 
 🔴 Then wait for me to upload it to telegraph and send you the link.
 
-A project by @supunma 🇱🇰
+A project by [Lakshan Pathum](https://t.me/Lakshan_Pathum)
 
-✅ Join our bots channel and group
-🔰@SL_bot_zone🔰@slbotzone.
-
-~ @supunma</b>""",
+☎️[Contact Me](@Lakshan_Pathum_Bot)""",
         reply_markup=InlineKeyboardMarkup(
                                 [[
                                         InlineKeyboardButton(
@@ -80,9 +74,9 @@ async def about(client, message):
                chat_id=message.chat.id,
                text="""<b>About Telegraph Bot!</b>
 
-<b>🔥 Developer:</b> <a href="https://t.me/supunma">supun 🇱🇰</a>
+<b>🔥 Developer:</b> <a href="https://t.me/Lakshan_Pathum">LakshanPathum</a>
 
-<b>🔥 Support:</b> <a href="https://t.me/slbotzone">slbotzone</a>
+<b>🔥 Support:</b> <a href="https://t.me/Lakshan_Pathum">slbotzone</a>
 
 <b>🔥 Library:</b> <a href="https://github.com/pyrogram/pyrogram">Pyrogram</a>
 

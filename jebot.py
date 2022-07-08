@@ -108,10 +108,6 @@ async def telegraphphoto(client, message):
 
     
 
-    
-
-"**♻ Uploading Telegraph ♻**......\n\n[░░░░░░░░░░] 00%")
-
     download_location = await client.download_media(
 
         message=message, file_name='root/jetg')

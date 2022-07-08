@@ -88,19 +88,52 @@ async def about(client, message):
             parse_mode="html")
 
 @Jebot.on_message(filters.photo)
+
 async def telegraphphoto(client, message):
-    msg = await message.reply_text(" 📤 Uploading To Telegraph...")
+
+    msg = await message.reply_text(" 📤 Uploading To Telegraph...\n\n[░░░░░░░░░░] 00%")
+    await msg.edit("**♻ Creating your Logo ♻**......\n\n[▇▇░░░░░░░░] 20%")
+
+    await msg.edit("**♻ Uploading Telegraph ♻**......\n\n[▇▇▇▇░░░░░░] 40%")
+
+    await msg.edit("**♻ Uploading Telegraph ♻**......\n\n[▇▇▇▇▇░░░░░] 50%")
+
+    await msg.edit("**♻ Uploading Telegraph ♻**......\n\n[▇▇▇▇▇▇▇░░░] 70%")
+
+    await msg.edit("**♻ Uploading Telegraph ♻**......\n\n[▇▇▇▇▇▇▇▇░░] 80%")
+
+    await msg.edit("**♻ Uploading Telegraph ♻**......\n\n[▇▇▇▇▇▇▇▇▇▇] 100%")
+
+    await msg.edit("📤Uploading....")
+
+    
+
+    
+
+"**♻ Uploading Telegraph ♻**......\n\n[░░░░░░░░░░] 00%")
+
     download_location = await client.download_media(
+
         message=message, file_name='root/jetg')
+
     try:
+
         response = upload_file(download_location)
+
     except:
+
         await msg.edit_text("Photo size should be less than 5mb!") 
+
     else:
-        await msg.edit_text(f'**📤Uploaded To Telegraph!\n\n👉 https://telegra.ph{response[0]}\n\nJoin @slbotzone**',
+
+        await msg.edit_text(f'**📤Uploaded To Telegraph!\n\n👉 https://telegra.ph{response[0]}\n\n@Lakshan_Pathum**',
+
             disable_web_page_preview=True,
+
         )
+
     finally:
+
         os.remove(download_location)
 
 @Jebot.on_message(filters.video)

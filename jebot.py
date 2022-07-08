@@ -91,20 +91,14 @@ async def about(client, message):
 
 async def telegraphphoto(client, message):
 
-    msg = await message.reply_text(" 📤 Uploading To Telegraph...\n\n[░░░░░░░░░░] 00%")
-    await msg.edit("**♻ Creating your Logo ♻**......\n\n[▇▇░░░░░░░░] 20%")
+    msg = await message.reply_text("**🚀 Downloading File...**")
+    await msg.edit("**Uploading [▪️   ]**")
 
-    await msg.edit("**♻ Uploading Telegraph ♻**......\n\n[▇▇▇▇░░░░░░] 40%")
+    await msg.edit("**Uploading [▪️▪️  ]**")
 
-    await msg.edit("**♻ Uploading Telegraph ♻**......\n\n[▇▇▇▇▇░░░░░] 50%")
+    await msg.edit("**Uploading [▪️ ▪️▪️  ]**")
 
-    await msg.edit("**♻ Uploading Telegraph ♻**......\n\n[▇▇▇▇▇▇▇░░░] 70%")
-
-    await msg.edit("**♻ Uploading Telegraph ♻**......\n\n[▇▇▇▇▇▇▇▇░░] 80%")
-
-    await msg.edit("**♻ Uploading Telegraph ♻**......\n\n[▇▇▇▇▇▇▇▇▇▇] 100%")
-
-    
+    await msg.edit("**Uploading [▪️ ▪️▪️ ▪️ ]**")
 
     download_location = await client.download_media(
 
@@ -120,8 +114,8 @@ async def telegraphphoto(client, message):
 
     else:
 
-        await msg.edit_text(f'**📤Uploaded To Telegraph!\n\n👉 https://telegra.ph{response[0]}\n\n@Lakshan_Pathum**',
-
+        await msg.edit_text(f'**📤Uploaded To Telegraph!\n\n👉 <code>https://telegra.ph{response[0]}</code>\n\n@Lakshan_Pathum**',
+        
             disable_web_page_preview=True,
 
         )
@@ -132,7 +126,15 @@ async def telegraphphoto(client, message):
 
 @Jebot.on_message(filters.video)
 async def telegraphvid(client, message):
-    msg = await message.reply_text("📤 Uploading To Telegraph...")
+    msg = await message.reply_text("**🚀 Downloading File...**")
+          await msg.edit("**Uploading [▪️   ]**")
+
+    await msg.edit("**Uploading [▪️▪️  ]**")
+
+    await msg.edit("**Uploading [▪️ ▪️▪️  ]**")
+
+    await msg.edit("**Uploading [▪️ ▪️▪️ ▪️ ]**")
+      
     download_location = await client.download_media(
         message=message, file_name='root/jetg')
     try:
@@ -140,7 +142,7 @@ async def telegraphvid(client, message):
     except:
         await msg.edit_text("Video size should be less than 5mb!") 
     else:
-        await msg.edit_text(f'**📤 Uploaded To Telegraph!\n\n👉 https://telegra.ph{response[0]}\n\nJoin @slbotzone**',
+        await msg.edit_text(f'**📤 Uploaded To Telegraph!\n\n👉 <code>https://telegra.ph{response[0]}</code>\n\n @Lakshan_Pathum**',
             disable_web_page_preview=True,
         )
     finally:
@@ -148,7 +150,15 @@ async def telegraphvid(client, message):
 
 @Jebot.on_message(filters.animation)
 async def telegraphgif(client, message):
-    msg = await message.reply_text("📤 Uploading To Telegraph...")
+    msg = await message.reply_text("**🚀 Downloading File...**")
+          await msg.edit("**Uploading [▪️   ]**")
+
+    await msg.edit("**Uploading [▪️▪️  ]**")
+
+    await msg.edit("**Uploading [▪️ ▪️▪️  ]**")
+
+    await msg.edit("**Uploading [▪️ ▪️▪️ ▪️ ]**")
+   
     download_location = await client.download_media(
         message=message, file_name='root/jetg')
     try:
@@ -156,7 +166,7 @@ async def telegraphgif(client, message):
     except:
         await msg.edit_text("Gif size should be less than 5mb!") 
     else:
-        await msg.edit_text(f'**📤 Uploaded To Telegraph!\n\n👉 https://telegra.ph{response[0]}\n\nJoin @slbotzone**',
+        await msg.edit_text(f'**📤 Uploaded To Telegraph!\n\n👉 <code>https://telegra.ph{response[0]}</code>\n\n @Lakshan_Pathum**',
             disable_web_page_preview=True,
         )
     finally:

@@ -104,8 +104,6 @@ async def telegraphphoto(client, message):
 
     await msg.edit("**♻ Uploading Telegraph ♻**......\n\n[▇▇▇▇▇▇▇▇▇▇] 100%")
 
-    await msg.edit("📤Uploading....")
-
     
 
     download_location = await client.download_media(

@@ -127,7 +127,8 @@ async def telegraphphoto(client, message):
 @Jebot.on_message(filters.video)
 async def telegraphvid(client, message):
     msg = await message.reply_text("**🚀 Downloading File...**")
-          await msg.edit("**Uploading [▪️   ]**")
+   
+    await msg.edit("**Uploading [▪️   ]**")
 
     await msg.edit("**Uploading [▪️▪️  ]**")
 
@@ -151,7 +152,8 @@ async def telegraphvid(client, message):
 @Jebot.on_message(filters.animation)
 async def telegraphgif(client, message):
     msg = await message.reply_text("**🚀 Downloading File...**")
-          await msg.edit("**Uploading [▪️   ]**")
+    
+    await msg.edit("**Uploading [▪️   ]**")
 
     await msg.edit("**Uploading [▪️▪️  ]**")
 
@@ -188,7 +190,7 @@ async def button(bot, update):
 print(
     """
 Bot Started!
-Join @slbotzone
+Join @Lakshan_Pathum✅
 """
 )
 
